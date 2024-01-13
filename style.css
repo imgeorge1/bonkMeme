@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder{
+    margin-left: 10rem;
+}
+
+.btn{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+.dog1{
+    width: 24rem;
+    height: 30.25rem;
+}
+.dog2{
+    width: 20.875rem;
+    height: 20.875rem;
+    transform: rotateY(180deg);
+    position: absolute;
+    margin-top: 9.375rem;
+    margin-left: -11.5rem;
+    transition-property: ease-out;
+}
+
+.pressed{
+    transform: rotateZ(-15deg); 
+    transition-duration: 0.1s;
+}
+
+@media (max-width: 768px){
+        .dog1{
+            width: 21rem;
+            height: 27.25rem;
+        }
+        .dog2{
+            width: 18.875rem;
+            height: 18.875rem;
+            transform: translateY(-2rem) rotateY(180deg);
+        }
+}
+
+@media (max-width: 425px){
+    .holder{
+        margin-left: 11rem;
+    }
+    .dog1{
+        width: 18rem;
+        height: 25.25rem;
+    }
+    .dog2{
+        width: 16.875rem;
+        height: 16.875rem;
+        transform: translateY(-2rem) rotateY(180deg);
+    }
+}
+
+@media (max-width: 320px){
+    .holder{
+        margin-left: 12rem;
+    }
+    .dog1{
+        width: 16rem;
+        height: 23.25rem;
+    }
+    .dog2{
+        width: 14.875rem;
+        height: 14.875rem;
+        transform: translateY(-2rem) rotateY(180deg) translateX(-2rem);
+    }
+}
